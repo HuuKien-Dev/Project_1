@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  --color-primary: #4502c7;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/* Container */
+/* PC */
+.container {
+  width: 1184px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Tablet quay ngang */
+@media (max-width: 1199.98px) {
+  .container {
+    width: 960px;
+  }
+}
+/* Tablet quay dọc */
+@media (max-width: 991.98px) {
+  .container {
+    width: 720px;
+  }
+}
+/* Tablet nhỏ */
+@media (max-width: 767.98px) {
+  .container {
+    width: 540px;
+  }
+}
+/* Mobile */
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+/* End container */
+
+/* Top header */
+.top-header {
+  padding: 10px 0;
+  background-color: var(--color-primary);
+}
+.top-header .inner-wrap {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 40px;
+}
+.top-header .inner-item {
+  color: #fffbeb;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.top-header .inner-item i {
+  font-size: 20px;
+}
+@media (max-width: 767.98px) {
+  .top-header {
+    display: none;
+  }
+}
+/* End top header */
+
+/* Header */
+.header {
+  background-color: #fff;
+  padding: 12px 0;
+}
+.header .inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .inner-logo img {
+  width: 218px;
+  height: auto;
+}
+
+.header .inner-menu > ul {
+  list-style: none;
+  display: flex;
+  gap: 0 40px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.header .inner-menu > ul > li {
+  display: flex;
+  gap: 0 6px;
+  align-items: center;
+  position: relative;
+}
+
+.header .inner-menu > ul > li > a {
+  color: #25282b;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.header .inner-menu > ul > li > i {
+  font-size: 20px;
+  color: #25282b;
+}
+
+.header .inner-menu > ul > li > a.inner-active,
+.header .inner-menu > ul > li > a:hover {
+  color: var(--color-primary);
+}
+
+.header .inner-menu > ul > li > ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  width: 280px;
+  border-radius: 0 0 10px 10px;
+  padding: 8px 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.header .inner-menu > ul > li > ul > li > a {
+  display: block;
+  padding: 8px 22px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-primary);
+}
+.header .inner-menu > ul > li > ul > li > a.inner-active,
+.header .inner-menu > ul > li > ul > li > a:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.header .inner-cart img {
+  width: 24px;
+  height: auto;
+}
+
+.header .inner-cart {
+  display: flex;
+  align-items: center;
+}
+
+.header .inner-cart .inner-icon-cart {
+  width: 28px;
+  height: auto;
+}
+.header .inner-cart .inner-icon-arrow {
+  width: 5px;
+  height: auto;
+}
+
+.header .inner-cart span {
+  display: inline-flex;
+  background-color: #ff3904;
+  width: 16px;
+  height: 14px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+/* End header */
