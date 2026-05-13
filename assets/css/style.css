@@ -233,3 +233,119 @@ gap: 0 8px;
     }
 }
 /* End header */
+
+/* Section 1 */
+.section-1 {
+    background-image: url(../image/background1.png);
+    background-size: cover;
+    background-position: center;
+    padding: 106px 0;
+}
+
+.section-1 .inner-wrap {
+    width: 768px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.section-1 .inner-title {
+    display: flex;
+    text-align: center;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.section-1 .inner-desc {
+    display: flex;
+    text-align: center;
+    color: #25282B;
+    font-weight:400;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.section-1 .inner-form {
+  background-color:#00000066 ;
+  border-radius: 10px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 258fr 258fr 126fr;
+  gap: 22px;
+}
+
+.section-1 .inner-form .inner-location {
+    grid-column: span 3;
+}
+
+.section-1 .inner-form .inner-input-group {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 12px;
+}
+.section-1 .inner-form .inner-input-group .inner-icon{
+    width: auto;
+    height: 20px;
+}
+.section-1 .inner-form .inner-input-group .inner-input{
+    flex: 1;
+    font-weight: 400;
+    font-size: 14px;
+    border: 0;
+    outline: none;
+}
+
+.section-1 .inner-form .inner-input-group .inner-down{
+    width: 10px;
+    height: auto;
+}
+
+.section-1 .inner-form .inner-search {
+    border: 0;
+    outline: none;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+@media (max-width: 992px) {
+    .section-1 .inner-wrap{
+        width: 100%;
+    }
+    .section-1 .inner-form {
+        padding: 15px;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+   .section-1 .inner-title {
+    font-weight: 27px;
+   }
+   .section-1 .inner-desc{
+    font-size: 14px;
+   }
+   .section-1 .inner-form{
+    grid-template-columns: 1fr;
+   }
+   .section-1 .inner-form .inner-location{
+    grid-column: span 1;
+   }
+}
+/* End section 1 */
